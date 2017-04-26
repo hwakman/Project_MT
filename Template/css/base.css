@@ -45,3 +45,6 @@ table,tr,.login{
     width:500px;
     height:500px;
 }
+.login_but{
+    width: 250px;
+}
