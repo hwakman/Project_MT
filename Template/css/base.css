@@ -1,0 +1,38 @@
+body{
+    max-height: 2160px;
+    max-width: 3840px;
+    background-color: transparent;
+}
+table{
+    float: left;
+    text-align: center;
+    font-size: large;
+    margin: auto;
+    border: 1px solid black;
+}
+table.table_center,.table_left,.table_right{
+    height: 500px;
+    border: 1px solid black;
+}
+table.table_head{
+    height: 250px;
+    width: 100%;
+}
+table.table_left{
+    width: 20%;
+}
+table.table_right{
+    width: 20%;
+}
+table.table_center{
+    width: 60%;
+}
+table.table_footer{
+    max-height: 100px;
+    width: 100%;
+}
+
+button{
+    width: 100%;
+    height: 100%;
+}

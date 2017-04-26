@@ -1,1 +1,1 @@
-{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/internship/Documents/Project_MT","disabled":false,"__vagrantfile":true}}}
+{"virtualbox":{"/var/www/html":{"guestpath":"/var/www/html","hostpath":"/home/internship/Documents/Project_MT/Template","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/internship/Documents/Project_MT","disabled":false,"__vagrantfile":true}}}
