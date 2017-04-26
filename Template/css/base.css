@@ -48,3 +48,6 @@ table,tr,.login{
 .login_but{
     width: 250px;
 }
+.clearfloat{
+    clear: both;
+}
