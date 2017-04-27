@@ -14,7 +14,7 @@ table.table_center,.table_left,.table_right{
     border: 1px solid black;
 }
 table.table_head{
-    height: 250px;
+    height: 200px;
     width: 100%;
 }
 table.table_left{
