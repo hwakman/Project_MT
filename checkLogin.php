@@ -6,11 +6,12 @@
  * Time: 14:39 น.
  */
 session_start();
-if (isset($_POST['Submit'])){
-    if (strcmp($_POST['Textuser'],"tor") && strcmp($_POST['Textpass'],"1234")){
-        echo "seikai!!";
-    }
-}
+$username = $_POST['Textuser'];
+$password = $_POST['Textpass'];
+//echo $username."<br>".$password;
 
+if (($username=="tor") && ($password=="1234")){
+    header("Location: main_index.php");
+}
 else
     echo "false";
