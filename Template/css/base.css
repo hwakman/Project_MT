@@ -25,12 +25,14 @@ table.table_right{
 }
 table.table_center{
     width: 60%;
+    margin: auto;
 }
 table.table_footer{
     height: 10px;
     width: 100%;
 }
 table,td{
+    width: auto;
     height: 50px;
 }
 button{

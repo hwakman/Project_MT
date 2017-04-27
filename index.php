@@ -3,7 +3,7 @@
     <link href="Template/css/base.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <table class="table_head">
+    <table class="table_center">
         <tr>
             <th>
                 <form action="checkLogin.php" method="post">
