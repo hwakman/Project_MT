@@ -27,7 +27,7 @@ table.table_center{
     width: 60%;
 }
 table.table_footer{
-    max-height: 100px;
+    height: 10px;
     width: 100%;
 }
 table,td{
@@ -40,10 +40,6 @@ button{
 }
 .head_menu{
     height: 100px;
-}
-table,tr,.login{
-    width:500px;
-    height:500px;
 }
 .login_but{
     width: 250px;

@@ -8,7 +8,7 @@
             <th>
                 <form action="checkLogin.php" method="post">
                     User : <input type="text" name="Textuser" id="Textuser"><br><br>
-                    Pass : <input type="text" name="Textpass" id="Textpass"><br><br>
+                    Pass : <input type="password" name="Textpass" id="Textpass"><br><br>
                     <input type="submit" value="Login" name="Submit">
                 </form>
             </th>
@@ -23,5 +23,3 @@
  * Date: 27/4/2560
  * Time: 12:38 น.
  */
-session_start();
-require 'connectDB.php';
