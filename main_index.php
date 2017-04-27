@@ -11,34 +11,12 @@
         <td>
             <form action="checkpath.php" method="post">
                     <button name="profile" value="profile" >PROFILE</button>
+                    <button name="checkin" value="checkin">CHECK IN</button>
+                    <button name="store" value="store">STORE</button>
+                    <button name="logout" value="logout">LOGOUT</button>
             </form>
         </td>
     </tr>
-<!--    checking_page-->
-    <tr>
-        <td>
-            <form action="checkpath.php" method="post">
-                <button name="checkin" value="checkin">CHECK IN</button>
-            </form>
-        </td>
-    </tr>
-<!--    store_page-->
-    <tr>
-        <td>
-            <form action="checkpath.php" method="post">
-                <button name="store" value="store">STORE</button>
-            </form>
-        </td>
-    </tr>
-<!--    logout_page-->
-    <tr>
-        <td>
-            <form action="checkpath.php" method="post">
-                <button name="logout" value="logout">LOGOUT</button>
-            </form>
-        </td>
-    </tr>
-<!--    space-->
     <tr></tr>
 
 </table>

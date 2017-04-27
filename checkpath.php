@@ -5,13 +5,15 @@
  * Date: 27/4/2560
  * Time: 16:09 น.
  */
-if ($_POST['profile'])
+if ($_REQUEST['profile'])
     header('Location: profile.php');
-elseif ($_POST['checkin'])
+elseif ($_REQUEST['index'])
+    header('Location: main_index.php');
+elseif ($_REQUEST['checkin'])
     header('Location: checkin.php');
-elseif ($_POST['store'])
+elseif ($_REQUEST['store'])
     header('Location: store.php');
-elseif ($_POST['logout'])
+elseif ($_REQUEST['logout'])
     header('Location: index.php');
 else
     echo "no value";

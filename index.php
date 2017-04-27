@@ -7,9 +7,11 @@
         <tr>
             <th>
                 <form action="checkLogin.php" method="post">
-                    User : <input type="text" name="Textuser" id="Textuser"><br><br>
-                    Pass : <input type="password" name="Textpass" id="Textpass"><br><br>
-                    <input type="submit" value="Login" name="Submit">
+                    username<br>
+                    <input type="text" name="Textuser" id="Textuser"><br><br>
+                    password<br>
+                    <input type="password" name="Textpass" id="Textpass"><br><br>
+                    <input type="submit"  class="login_but" value="Login" name="Submit">
                 </form>
             </th>
         </tr>
