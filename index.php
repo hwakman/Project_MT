@@ -6,7 +6,7 @@
     <table class="table_head">
         <tr>
             <th>
-                <form action="checkLogin.php">
+                <form action="checkLogin.php" method="post">
                     User : <input type="text" name="Textuser" id="Textuser"><br><br>
                     Pass : <input type="text" name="Textpass" id="Textpass"><br><br>
                     <input type="submit" value="Login" name="Submit">

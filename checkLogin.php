@@ -6,7 +6,11 @@
  * Time: 14:39 น.
  */
 session_start();
-if(isset($_POST['Summit']))
-    echo "it's work!!";
+if (isset($_POST['Submit'])){
+    if (strcmp($_POST['Textuser'],"tor") && strcmp($_POST['Textpass'],"1234")){
+        echo "seikai!!";
+    }
+}
+
 else
-    echo "no value pass in";
+    echo "false";
