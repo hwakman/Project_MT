@@ -15,10 +15,21 @@ else
     echo "it's all right !!!";
 echo "<br>";
 $value = $_REQUEST['content'];
-$sql = "INSERT INTO 'feed'(feed_content,p_key) VALUE ($value,'')";
-$query = mysqli_query($conn,$sql) ;
-if ($query)
-    echo "record added";
+$value_t = $_REQUEST['topic'];
+echo $value_t;
+if ($value!=''&&$value_t!=''){
+    $sql = "INSERT INTO feed(feed_content,topic) VALUE ('". $conn->real_escape_string($value) ."','". $conn->real_escape_string($value_t) ."')";
+    $query = mysqli_query($conn,$sql) ;
+    if ($query){
+        echo "record added";
+        header('Location: main_index.php');
+    }
+    else
+        echo "no value";
+}
 else
-    echo "no value";
+    header('Location: main_index.php');
+
+
+
 mysqli_close($conn);
