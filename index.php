@@ -7,7 +7,7 @@ session_start();
 </head>
 <body>
     <table style="float: right">
-        <tr>
+        <tr >
             <th>
                 <form action="checkLogin.php" method="post">
                     <br>Username :

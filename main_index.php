@@ -38,11 +38,11 @@ $query = mysqli_query($conn,$sql);
     <tr></tr>
 
 </table>
-<table class="table_center" style="padding: 5px 5px 5px 5px">
+<table class="table_center">
     <?php
         if ($_SESSION['THIS_ID']=='master'){
             echo
-            "<tr>
+            "<tr >
                 <th align=\"left\" height=\"130\">
 <!--                Enter something<br>-->
                 <form action=\"feed.php\" method=\"post\">
@@ -58,12 +58,11 @@ $query = mysqli_query($conn,$sql);
         }
     ?>
     <tr class="content">
-        <td class="text_use">
+        <td style="padding: 10px 0px 10px 10px">
             <?php
             while ($result=mysqli_fetch_array($query,MYSQLI_ASSOC)) {
             ?><?php
-            echo date('Y/m/d')." : <b>".$result["topic"]."</b><br>[".$result["feed_content"]." ]";
-            echo "<form action='feed.php' method='post'>
+            echo date('Y/m/d')." : <b>".$result["topic"]."</b><br>[".$result["feed_content"]." ]"."<form action='feed.php' method='post'>
                     <input type='submit' name='del' value='delete'>
                     </form>";
             echo "<br><br>";
