@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html>
 <head>
     <link href="Template/css/base.css" rel="stylesheet" type="text/css">
@@ -13,6 +16,11 @@
                     <input type="password" name="Textpass" id="Textpass">
                     <input type="submit"  class="login_but" value="Login" name="Submit">
                 </form>
+                <div style="float: left;">
+                    <?php
+                    echo "<a style=\"color: red\">".$_SESSION['ERROR_LOGIN']."</a>";
+                    ?>
+                </div>
             </th>
         </tr>
     </table>

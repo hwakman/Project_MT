@@ -1,4 +1,5 @@
 <?php
+session_start();
 $servername = "localhost";
 $username = "root";
 $password = "tor14299";
@@ -13,6 +14,7 @@ if ($conn->connect_error) {
 }
 $sql = "SELECT feed_content,topic FROM feed ORDER BY p_key DESC ";
 $query = mysqli_query($conn,$sql);
+//echo $_SESSION['THIS_ID'];
 ?>
 <html>
 <head>
@@ -37,19 +39,24 @@ $query = mysqli_query($conn,$sql);
 
 </table>
 <table class="table_center">
-    <tr>
-        <th align="left" height="130">
+    <?php
+        if ($_SESSION['THIS_ID']=='master'){
+            echo
+            "<tr>
+                <th align=\"left\" height=\"130\">
 <!--                Enter something<br>-->
-                <form action="feed.php" method="post">
-                    <input type="text" name="topic"><b> Topic (20 word)</b>
+                <form action=\"feed.php\" method=\"post\">
+                    <input type=\"text\" name=\"topic\"><b> Topic (20 word)</b>
                     <br>
-                    <textarea name="content" cols="50" rows="5"></textarea>
+                    <textarea name=\"content\" cols=\"50\" rows=\"5\"></textarea>
                     <br>
                     (150 word)
-                    <input type="submit" name="submit" value="Post">
+                    <input type=\"submit\" name=\"submit\" value=\"Post\">
                 </form>
-        </th>
-    </tr>
+                </th>
+            </tr>";
+        }
+    ?>
     <tr class="content">
         <td class="text_use">
             <?php
