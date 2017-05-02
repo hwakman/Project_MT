@@ -19,7 +19,7 @@ table.table_center,.table_left,.table_right,.table_right_{
 }
 table.table_center{
     display: block;
-    width: 59.9%;
+    width: 60%;
 }
 button{
     width: 100%;
@@ -75,6 +75,6 @@ table.content{
 .feed{
     float: left;
 }
-.text_use{
-    padding: 0px;
-}
+/*.text_use{*/
+    /*padding: 10px 10px 10px 10px;*/
+/*}*/

@@ -38,7 +38,7 @@ $query = mysqli_query($conn,$sql);
     <tr></tr>
 
 </table>
-<table class="table_center">
+<table class="table_center" style="padding: 5px 5px 5px 5px">
     <?php
         if ($_SESSION['THIS_ID']=='master'){
             echo
