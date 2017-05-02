@@ -10,11 +10,16 @@ table{
     border: 1px solid black;
 }
 table.table_center,.table_left,.table_right,.table_right_{
-    height: 100%;
+    height: 500px;
     table-layout: fixed;
-    padding: inherit;
+    overflow-y: scroll;
+    word-wrap: break-word;
     /*min-height: 500px;*/
     /*border: 1px solid black;*/
+}
+table.table_center{
+    display: block;
+    width: 59.9%;
 }
 button{
     width: 100%;
@@ -35,7 +40,8 @@ table.table_right_{
     width: 80%;
 }
 table.table_center{
-    width: 60%;
+
+
     /*max-width: 60%;*/
     /*margin: auto;*/
 }
@@ -48,7 +54,8 @@ table,td,th{
     /*height: 20px;*/
     /*border: 1px solid black;*/
     /*min-height: 25px;*/
-    overflow-wrap: break-word;
+    overflow: hidden;
+    word-wrap: break-word;
 }
 
 .head_menu{
