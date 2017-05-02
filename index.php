@@ -3,19 +3,24 @@
     <link href="Template/css/base.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <table class="table_center">
+    <table style="float: right">
         <tr>
             <th>
                 <form action="checkLogin.php" method="post">
-                    username<br>
-                    <input type="text" name="Textuser" id="Textuser"><br><br>
-                    password<br>
-                    <input type="password" name="Textpass" id="Textpass"><br><br>
+                    <br>Username :
+                    <input type="text" name="Textuser" id="Textuser">
+                    Password :
+                    <input type="password" name="Textpass" id="Textpass">
                     <input type="submit"  class="login_but" value="Login" name="Submit">
                 </form>
             </th>
         </tr>
     </table>
+    <div style="clear: right"></div>
+<table width="100%" style="height: 500px" >
+    <tr>
+    </tr>
+</table>
 </body>
 </html>
 <?php

@@ -7,7 +7,7 @@
 <table class="table_left">
     <!--    profile_page-->
     <tr>
-        <td>
+        <td height="50">
             <form action="checkpath.php" method="post">
                 <button name="index" value="index" >INDEX</button>
                 <button name="checkin" value="checkin">CHECK IN</button>

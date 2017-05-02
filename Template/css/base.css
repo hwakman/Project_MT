@@ -39,14 +39,12 @@ table.table_right{
 table.table_right_{
     width: 80%;
 }
-table.table_center{
-
-
-    /*max-width: 60%;*/
-    /*margin: auto;*/
-}
 table.table_footer{
     height: 20px;
+    width: 100%;
+}
+table.login_page{
+    height: 300px;
     width: 100%;
 }
 table,td,th{
