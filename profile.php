@@ -26,7 +26,7 @@ $conn = new mysqli('localhost','root','tor14299','projectMt');
                 </form>
             </td>
         </tr>
-        <tr></tr>
+        <tr ></tr>
 
     </table>
     <table class="table_right_">
@@ -67,7 +67,6 @@ $conn = new mysqli('localhost','root','tor14299','projectMt');
                     </form>
                 </div>
             </td>
-            <td></td>
         </tr>
         <tr></tr>
     </table>

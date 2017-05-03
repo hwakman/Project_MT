@@ -29,6 +29,7 @@ button{
 table.table_head{
     height: 200px;
     width: 100%;
+
 }
 table.table_left{
     width: 20%;
@@ -77,4 +78,8 @@ table.content{
 }
 .text_use{
     padding: 10px 10px 10px 10px;
+}
+.passCheange{
+    background-color: #fff65b;
+    padding-left: 20px;
 }

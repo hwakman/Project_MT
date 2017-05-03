@@ -66,5 +66,11 @@ $_SESSION['THIS_ID'] = $row['id'];
 $_SESSION['THIS_TYPE'] = $row['type'];
 $_SESSION['THIS_NAME'] = $row['name'];
 $_SESSION['THIS_BIRTHDAY'] = $row['b_day'];
+if ($_SESSION['THIS_BIRTHDAY']=='0000-00-00'){
+    $_SESSION['THIS_BIRTHDAY'] = '<a style="color: red">NO DATA</a>';
+}
 $_SESSION['THIS_ENTER'] = $row['entering'];
+if ($_SESSION['THIS_ENTER']=='0000-00-00'){
+    $_SESSION['THIS_ENTER'] = '<a style="color: red">NO DATA</a>';
+}
 $_SESSION['THIS_PASSWORD'] = $row['password'];
