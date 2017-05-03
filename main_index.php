@@ -19,6 +19,7 @@ $query = mysqli_query($conn,$sql);
 <html>
 <head>
     <link href="Template/css/base.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
 </head>
 <body>
 <table class="table_head"><tr></tr></table>
@@ -62,9 +63,11 @@ $query = mysqli_query($conn,$sql);
             <?php
             while ($result=mysqli_fetch_array($query,MYSQLI_ASSOC)) {
             ?><?php
-            echo date('Y/m/d')." : <b>".$result["topic"]."</b><br>[".$result["feed_content"]." ]"."<form action='feed.php' method='post'>
-                    <input type='submit' name='del' value='delete'>
-                    </form>";
+            echo date('Y/m/d')
+                ." : <b>"
+                .$result["topic"]
+                ."</b><br>["
+                .$result["feed_content"]." ]";
             echo "<br><br>";
 //            ?><!--</td>-->
         <!--        </tr>-->
@@ -77,15 +80,31 @@ $query = mysqli_query($conn,$sql);
 </table>
 <table class="table_right">
     <tr>
-        <th>
+        <td style="padding: 10px 10px 10px 10px" height="50">
             <?php
-            echo "USER : ".$_SESSION['THIS_ID']
-                ."<br>"."NAME : ".$_SESSION['THIS_NAME']
-                ."<br>"."TYPE : ".$_SESSION['THIS_TYPE']
-                ."<br>"."BIRTHDAY".$_SESSION['THIS_BIRTHDAY'];
+            $type = '';
+            switch ($_SESSION['THIS_TYPE']){
+                case 'v001':
+                    $type = 'SYSTEM MANAGER';
+                    break;
+                case 'v002':
+                    $type = 'SYSTEM ASSISTANT';
+                    break;
+                case 'v003':
+                    $type ='USER';
+                    break;
+                default:
+                    break;
+            }
+            echo "USER : "."<b>'".strtoupper($_SESSION['THIS_ID'])."'</b>"
+                ."<br><br>"."NAME : ".strtoupper($_SESSION['THIS_NAME'])
+                ."<br><br>"."TYPE : ".$type
+                ."<br><br>"."BIRTHDAY : ".$_SESSION['THIS_BIRTHDAY']
+                ."<br><br>"."ENTER DATE : ".$_SESSION['THIS_ENTER'];
             ?>
-        </th>
+        </td>
     </tr>
+    <tr></tr>
 </table>
 <table class="table_footer"><tr></tr></table>
 </body>
