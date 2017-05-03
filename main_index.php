@@ -75,7 +75,18 @@ $query = mysqli_query($conn,$sql);
     </tr>
     <tr></tr>
 </table>
-<table class="table_right"><tr></tr></table>
+<table class="table_right">
+    <tr>
+        <th>
+            <?php
+            echo "USER : ".$_SESSION['THIS_ID']
+                ."<br>"."NAME : ".$_SESSION['THIS_NAME']
+                ."<br>"."TYPE : ".$_SESSION['THIS_TYPE']
+                ."<br>"."BIRTHDAY".$_SESSION['THIS_BIRTHDAY'];
+            ?>
+        </th>
+    </tr>
+</table>
 <table class="table_footer"><tr></tr></table>
 </body>
 </html>

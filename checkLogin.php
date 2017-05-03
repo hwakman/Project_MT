@@ -63,3 +63,6 @@ else{
     echo $back;
 }
 $_SESSION['THIS_ID'] = $row['id'];
+$_SESSION['THIS_TYPE'] = $row['type'];
+$_SESSION['THIS_NAME'] = $row['name'];
+$_SESSION['THIS_BIRTHDAY'] = $row['b_day'];
