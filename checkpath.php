@@ -15,5 +15,7 @@ elseif ($_REQUEST['store'])
     header('Location: store.php');
 elseif ($_REQUEST['logout'])
     header('Location: index.php');
+elseif ($_REQUEST['add_user'])
+    header('Location: add_user.php');
 else
     echo "no value";

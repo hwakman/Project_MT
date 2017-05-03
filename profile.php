@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html>
 <head>
     <link href="Template/css/base.css" rel="stylesheet" type="text/css">
@@ -10,6 +13,12 @@
             <td height="50">
                 <form action="checkpath.php" method="post">
                     <button name="index" value="index" >INDEX</button>
+                    <?php
+                    if($_SESSION['THIS_ID']=='master')
+                    {
+                        echo "<button name='add_user' value='add_user'>ADD USER</button>";
+                    }
+                    ?>
                     <button name="checkin" value="checkin">CHECK IN</button>
                     <button name="store" value="store">STORE</button>
                     <button name="logout" value="logout">LOGOUT</button>
