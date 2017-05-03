@@ -37,7 +37,36 @@ $conn = new mysqli($servername, $username, $password,$dbname);
     <tr></tr>
 
 </table>
-<table class="table_right_"><tr></tr></table>
-<table class="table_footer"><tr></tr></table>
+<table class="table_right_">
+    <tr style="height: 50px">
+        <td>
+            <div style="padding: 20px 20px 20px 20px">
+                <form action="create_user.php" method="post">
+                    Name :
+                    <input type="text" name="name">
+                    <br><br>
+                    User ID :
+                    <input type="text" name="user_id">
+                    <p>___________________________________________________________________________________</p>
+                    Password :
+                    <input type="password" name="user_password">
+                    <br><br>
+                    Confirm password :
+                    <input type="password" name="user_passwordconf">
+                    <p>___________________________________________________________________________________</p>
+                    Birth day :
+                    <input type="date" name="user_birthday" >
+                    <p>___________________________________________________________________________________</p>
+                    Enter date :
+                    <input type="date" name="user_entering" >
+                    <p>___________________________________________________________________________________</p>
+                    <input type="submit" name="Submit" value="add user">
+                </form>
+            </div>
+        </td>
+    </tr>
+    <tr></tr>
+</table>
+<table class="table_footer"><tr><td><p><?php echo $_SESSION['ADD_USER_MESSAGE'];?></p></td></tr></table>
 </body>
 </html>

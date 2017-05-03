@@ -11,7 +11,7 @@ session_start();
             <th>
                 <form action="checkLogin.php" method="post">
                     <br>Username :
-                    <input type="text" name="Textuser" id="Textuser">
+                    <input type="text" name="Textuser" id="Textuser" value="<?php echo $_SESSION['THIS_ID'];?>">
                     Password :
                     <input type="password" name="Textpass" id="Textpass">
                     <input type="submit"  class="login_but" value="Login" name="Submit">

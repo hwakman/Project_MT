@@ -102,11 +102,26 @@ $query = mysqli_query($conn,$sql);
                 default:
                     break;
             }
+
+            $b_data = '';
+            $en_data = '';
+            if ($_SESSION['THIS_BIRTHDAY']=='0000-00-00'){
+                $b_data = '<a style="color: red">NO DATA</a>';
+            }
+            else
+                $b_data = $_SESSION['THIS_BIRTHDAY'];
+
+            if ($_SESSION['THIS_ENTER']=='0000-00-00'){
+                $en_data = '<a style="color: red">NO DATA</a>';
+            }
+            else
+                $en_data = $_SESSION['THIS_ENTER'];
+
             echo "USER : "."<b>'".strtoupper($_SESSION['THIS_ID'])."'</b>"
                 ."<br><br>"."NAME : ".strtoupper($_SESSION['THIS_NAME'])
                 ."<br><br>"."TYPE : ".$type
-                ."<br><br>"."BIRTHDAY : ".$_SESSION['THIS_BIRTHDAY']
-                ."<br><br>"."ENTER DATE : ".$_SESSION['THIS_ENTER'];
+                ."<br><br>"."BIRTHDAY : ".$b_data
+                ."<br><br>"."ENTER DATE : ".$en_data;
             ?>
         </td>
     </tr>

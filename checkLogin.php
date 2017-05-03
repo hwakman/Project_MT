@@ -67,3 +67,4 @@ $_SESSION['THIS_TYPE'] = $row['type'];
 $_SESSION['THIS_NAME'] = $row['name'];
 $_SESSION['THIS_BIRTHDAY'] = $row['b_day'];
 $_SESSION['THIS_ENTER'] = $row['entering'];
+$_SESSION['THIS_PASSWORD'] = $row['password'];
