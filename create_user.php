@@ -13,7 +13,7 @@ $date_format2 = explode('-',$_REQUEST['user_entering']);
 $b_day = $date_format[0].'-'.$date_format[1].'-'.$date_format[2];
 $enter_day = $date_format2[0].'-'.$date_format2[1].'-'.$date_format2[2];
 
-$sql = "INSERT INTO USERDETAIL VALUES ('','$id','$password','$name','$b_day','v003','$enter_day')";
+$sql = "INSERT INTO USERDETAIL VALUES ('','$id','$password','$name','$b_day','v003','$enter_day','')";
 
 if ($id!=''&&$password!=''&&$passwordconf!='')
 {
@@ -26,7 +26,7 @@ if ($id!=''&&$password!=''&&$passwordconf!='')
                 }
                 else{
                     header('Location: add_user.php');
-                    echo $_SESSION['ADD_USER_MESSAGE'] = '<div style="color: red">Data Base insert Error !</div>';
+                    echo $_SESSION['ADD_USER_MESSAGE'] = '<div style="color: red">Data Base insert Error !</div>'.$sql;
                 }
             }
             else{
