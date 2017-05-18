@@ -20,7 +20,7 @@ session_start();
                 }
                 ?>
                 <button name="checkin" value="checkin">CHECK IN</button>
-                <button name="store" value="store">STORE</button>
+                <button name="store" value="store">USER LIST</button>
                 <button name="logout" value="logout">LOGOUT</button>
             </form>
         </td>

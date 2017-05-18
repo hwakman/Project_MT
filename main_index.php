@@ -20,6 +20,17 @@ $query = mysqli_query($conn,$sql);
 <head>
     <link href="Template/css/base.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
+    <style>
+        button{
+            background-color: #555555;
+            color: white;
+            border: 2px solid #555555;
+        }
+        button:hover{
+            background-color: white;
+            color: black;
+        }
+    </style>
 </head>
 <body style="background-color: #cbf3ff">
 <table class="table_head" style="width: 100%">
@@ -30,7 +41,7 @@ $query = mysqli_query($conn,$sql);
     </tr>
 </table>
 <!--menu-->
-<table class="table_left">
+<table class="table_left" style="background-color: #555555">
 <!--    profile_page-->
     <tr>
         <td height="50">
@@ -42,10 +53,15 @@ $query = mysqli_query($conn,$sql);
                         echo "<button name='add_user' value='add_user'>ADD USER</button>";
                     }
                     ?>
-                    <button name="checkin" value="checkin">CHECK IN</button>
-                    <button name="store" value="store">STORE</button>
+                    <button name="checkin" value="checkin" onclick="myAlert()">CHECK IN</button>
+                    <button name="store" value="store">USER LIST</button>
                     <button name="logout" value="logout">LOGOUT</button>
             </form>
+            <script>
+                function myAlert() {
+                    alert("Check in !");
+                }
+            </script>
         </td>
     </tr>
     <tr></tr>
@@ -90,7 +106,7 @@ $query = mysqli_query($conn,$sql);
     </tr>
     <tr></tr>
 </table>
-<table class="table_right">
+<table class="table_right" style="background-color: #555555;color: white">
     <tr>
         <td style="padding: 10px 10px 10px 10px" height="50">
             <?php
@@ -112,7 +128,8 @@ $query = mysqli_query($conn,$sql);
                 ."<br><br>"."NAME : ".strtoupper($_SESSION['THIS_NAME'])
                 ."<br><br>"."TYPE : ".$type
                 ."<br><br>"."BIRTHDAY : ".$_SESSION['THIS_BIRTHDAY']
-                ."<br><br>"."ENTER DATE : ".$_SESSION['THIS_ENTER'];
+                ."<br><br>"."ENTER DATE : ".$_SESSION['THIS_ENTER']
+                ."<br><br>"."TOTAL CHECK IN : ".$_SESSION['THIS_CHECK'];
             ?>
         </td>
     </tr>

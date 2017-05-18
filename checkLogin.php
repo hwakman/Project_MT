@@ -74,3 +74,4 @@ if ($_SESSION['THIS_ENTER']=='0000-00-00'){
     $_SESSION['THIS_ENTER'] = '<a style="color: red">NO DATA</a>';
 }
 $_SESSION['THIS_PASSWORD'] = $row['password'];
+$_SESSION['THIS_CHECK'] = $row['check_date'];

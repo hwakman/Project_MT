@@ -13,7 +13,7 @@ $date_format2 = explode('-',$_REQUEST['user_entering']);
 $b_day = $date_format[0].'-'.$date_format[1].'-'.$date_format[2];
 $enter_day = $date_format2[0].'-'.$date_format2[1].'-'.$date_format2[2];
 
-$sql = "INSERT INTO USERDETAIL VALUES ('','$id','$password','$name','$b_day','v003','$enter_day','')";
+$sql = "INSERT INTO USERDETAIL VALUES ('','$id','$password','$name','$b_day','v003','$enter_day','','')";
 //$sql_check = "SELECT * FROM USERDETAIL";
 //$check = $conn->query($sql_check);
 //while ($row = $check->fetch_assoc()){

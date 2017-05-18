@@ -13,10 +13,27 @@ $conn = new mysqli($servername, $username, $password,$dbname);
 <head>
     <link href="Template/css/base.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
+    <style>
+        button{
+            background-color: #555555;
+            color: white;
+            border: 2px solid #555555;
+        }
+        button:hover{
+            background-color: white;
+            color: black;
+        }
+    </style>
 </head>
 <body>
-<table class="table_head"><tr></tr></table>
-<table class="table_left">
+<table class="table_head" style="width: 100%">
+    <tr>
+        <th>
+            <img src="img/01.jpg" style="width: 100%;max-height: 300px" >
+        </th>
+    </tr>
+</table>
+<table class="table_left" style="background-color: #555555">
     <!--    profile_page-->
     <tr>
         <td height="50">
@@ -29,7 +46,7 @@ $conn = new mysqli($servername, $username, $password,$dbname);
                 }
                 ?>
                 <button name="checkin" value="checkin">CHECK IN</button>
-                <button name="store" value="store">STORE</button>
+                <button name="store" value="store">USER LIST</button>
                 <button name="logout" value="logout">LOGOUT</button>
             </form>
         </td>
@@ -37,7 +54,7 @@ $conn = new mysqli($servername, $username, $password,$dbname);
     <tr></tr>
 
 </table>
-<table class="table_right_">
+<table class="table_right_" style="background-color: #747474;color: white">
     <tr style="height: 50px">
         <td>
             <div style="padding: 20px 20px 20px 20px">
