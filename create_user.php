@@ -35,7 +35,7 @@ if ($id!=''&&$password!=''&&$passwordconf!='')
                 }
                 else{
                     header('Location: add_user.php');
-                    echo $_SESSION['ADD_USER_MESSAGE'] = '<div style="color: red">Data Base insert Error !</div>'.$sql;
+                    echo $_SESSION['ADD_USER_MESSAGE'] = '<div style="color: red">User not allow to duplicate !</div>';
                 }
             }
             else{
