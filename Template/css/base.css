@@ -1,13 +1,12 @@
 body{
     max-height: 2160px;
     max-width: 3840px;
-    background-color: darkolivegreen;
 }
 table{
     float: left;
     /*text-align: inherit;*/
     /*margin: auto;*/
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 table.table_center,.table_left,.table_right,.table_right_{
     height: 500px;

@@ -10,7 +10,7 @@ session_start();
         .AutoSlide {display: none;}
     </style>
 </head>
-<body>
+<body style="background-color: #c2ff95">
     <table style="float: right">
         <tr >
             <th>
