@@ -10,7 +10,7 @@ session_start();
         .AutoSlide {display: none;}
     </style>
 </head>
-<body style="background-color: #a2ddff">
+<body style="background-color: #cde4ff">
     <table style="float: right">
         <tr >
             <th>
@@ -30,10 +30,10 @@ session_start();
         </tr>
     </table>
     <div style="clear: right"></div>
-<table width="100%" style="height: 500px" >
+<table width="100%" style="height: 400px;overflow: hidden" >
     <tr>
         <th>
-            <div style="margin: auto;max-height: 1080px">
+            <div style="margin: auto;max-height: 800px">
                 <img src="img/01.jpg" style="width: 100%" class="AutoSlide">
                 <img src="img/02.jpg" style="width: 100%" class="AutoSlide">
                 <img src="img/03.jpg" style="width: 100%" class="AutoSlide">

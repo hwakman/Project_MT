@@ -21,8 +21,14 @@ $query = mysqli_query($conn,$sql);
     <link href="Template/css/base.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
 </head>
-<body>
-<table class="table_head"><tr></tr></table>
+<body style="background-color: #cbf3ff">
+<table class="table_head" style="width: 100%">
+    <tr>
+        <th>
+            <img src="img/01.jpg" style="width: 100%;max-height: 300px" >
+        </th>
+    </tr>
+</table>
 <!--menu-->
 <table class="table_left">
 <!--    profile_page-->
@@ -45,7 +51,7 @@ $query = mysqli_query($conn,$sql);
     <tr></tr>
 
 </table>
-<table class="table_center">
+<table class="table_center" style="background-color: #d6ffd4">
     <?php
         if ($_SESSION['THIS_ID']=='master'){
             echo
